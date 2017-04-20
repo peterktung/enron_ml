@@ -1,0 +1,5 @@
+Forums:
+https://discussions.udacity.com/c/nd002-intro-to-machine-learning/nd002-p-identifying-fraud-from-enron-email
+
+Books:
+"An Introduction to Statistical Learning: with Applications in R", Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani
