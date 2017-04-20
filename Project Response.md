@@ -3,13 +3,13 @@
   After cleaning up the data, we were left with 125 entries and 16 features.  
   
 2. Two features were engineered from the 16 remaining features. One was "bonus to salary ratio", the other was "exercised stock to salary" ratio. The reasoning here is that poi's would make an abnormal amount of money either through bonuses or through selling stocks when the stock price was artifically inflated. These amounts would be much higher in comparson to their normal salary. Oddly enough, when we used SelectKBest to choose select the features, we end up with the following:
-<center>  
+  
   | feature                 | feature score | feature importance |  
   |-------------------------|---------------|--------------------|  
   | salary                  |        11.196 |              0.370 |  
   | exercised_stock_options |        13.714 |              0.376 |  
   | total_stock_value       |        14.691 |              0.254 |  
-</center>  
+  
   Note that while both salary and exercised_stock_options were selected, the engineered "exercised stock to salary" was not used. We did not scale our features as our final model was a tree based classifier so "distance" does not affect the outcome.  
   
 3. The final model used was the DecisionTreeClassifier. Others there were tried included LogisticRegression, SVM, and RandomForestClassifier. Logistic regression had the poorest performance while SVM had a good precision call, it has a very low recall score. Overall, the tree based classifiers had the best performance, but oddly enough, the random forest classifier did not perform as well as the base decision tree classifier.  
