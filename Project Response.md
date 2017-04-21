@@ -2,6 +2,7 @@
   There were two outliers that was removed through manual inspection as they were not real people ("TOTAL", and "THE TRAVEL AGENCY IN THE PARK"). The data distribution also suggest that there were possible poi outliers, but given that there are only 18 poi's vs 125 non poi's, we left these entries in the dataset.  The fact that the poi is an outlier could also be a factor that could be leveraged is our machine learning algorithm. Every feature had some missing data, whether they are zero's or NaN values. We found that some financial features had mostly zero values (director_fees, restricted_stock_deferred, loan_advances) so they were removed as they provide no predictive power. Below is a table that list the number of entries that have zero or NaN value for each feature.
   
   | feature                   | number of zeros and NaN's |
+  |---------------------------|---------------------------|
   | bonus                     | 62                        |
   | deferral_payments         | 105                       |
   | deferred_income           | 95                        |
